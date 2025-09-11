@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     weather_api_key: str
     weather_provider: str = "openweathermap"
-    city: str = "Cebu"
+    city: str = "Cebu City"
     country: str = "PH"
     units: str = "metric"
 
