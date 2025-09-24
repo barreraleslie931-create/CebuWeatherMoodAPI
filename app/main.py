@@ -110,7 +110,7 @@ def weather_mood_page():
 # ==============================
 @app.get("/qrcode", response_class=HTMLResponse, tags=["utility"])
 def generate_qrcode():
-    qr_link = "http://127.0.0.1:8000/weather-mood"
+    qr_link = "http://10.22.22.2:8000/weather-mood"
     qr_url = f"https://api.qrserver.com/v1/create-qr-code/?size=250x250&data={qr_link}"
 
     html_content = f"""
